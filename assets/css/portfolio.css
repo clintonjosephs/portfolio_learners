@@ -1,0 +1,33 @@
+* {
+    font-family: 'Poopins', sans-serif;
+}
+
+.imgtag {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.social-icons {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.about-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
