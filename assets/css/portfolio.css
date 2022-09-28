@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #4A63E7;
+    --accent-color: #FF5958;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #F2F2F2;
+}
