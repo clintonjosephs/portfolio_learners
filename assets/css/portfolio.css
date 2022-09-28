@@ -14,25 +14,25 @@ body {
   --accent-color: #ff5958;
   --white: #ffffff;
   --black: #000000;
-  --grey: #f2f2f2;
+  --grey: #808080;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  margin-top: 5rem;
   width: 100vw;
   height: 100vh;
   justify-content: center;
-  align-items: center;
 }
 
+/********** NAVIGATION SIDEBAR START **********/
 .navigation {
   display: flex;
   flex-direction: column;
   width: 13rem;
   height: 35rem;
   background: var(--secondary-color);
-  position: fixed;
   border-radius: 15px;
   padding: 2rem;
   color: var(--white);
@@ -94,4 +94,96 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/********** NAVIGATION SIDEBAR END **********/
+
+/*** WELCOME CARD START ****/
+.welcome-wrapper {
+    background-image: url(../images/welcomebg.jpeg);
+    background-size: cover;
+    margin-left: 2rem;
+    border-radius: 15px;
+}
+
+.welcome {
+    color: var(--white);
+    background: var(--secondary-color);
+    opacity: 0.8;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+/*** WELCOME CARD END ****/
+
+/*** ABOUT CARD START ****/
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*** ABOUT CARD END ****/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+    height: 35rem;
+    border-radius: 15px;
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cta {
+    margin-top: 2rem;
+}
+
+.btn {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-accent {
+    color: var(--white);
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    border: solid 1px var(--white);
+}
+
+.about-card {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.underscore {
+    border: solid 3px var(--accent-color);
+    width: 2rem;
+    border-radius: 10px;
+}
+
+.details {
+    margin: 1rem;
+}
+
+.details > p {
+    color: var(--grey);
 }
