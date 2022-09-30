@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-  --primary-color: #F6F7FE;
+  --primary-color: #f6f7fe;
   --secondary-color: #4a63e7;
   --accent-color: #ff5958;
   --white: #ffffff;
@@ -42,10 +42,9 @@ body {
   left: 17rem;
 }
 
-
 .content {
-    position: relative;
-    left: 7rem;
+  position: relative;
+  left: 7rem;
 }
 
 .nav-title p {
@@ -119,7 +118,7 @@ body {
 .welcome {
   color: var(--white);
   background: var(--secondary-color);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .welcome h1 {
@@ -144,16 +143,15 @@ body {
 }
 /*** ABOUT CARD END ****/
 .cardx {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50rem;
-    height: 35rem;
-    border-radius: 15px;
-    padding: 2rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  height: 35rem;
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -185,12 +183,22 @@ body {
   text-decoration: none;
 }
 
+.btn:hover {
+  background: var(--secondary-color);
+  border: solid 1px var(--white);
+}
+
 .btn-accent {
   color: var(--white);
   padding: 1rem 1rem;
   border-radius: 20px;
   text-decoration: none;
   border: solid 1px var(--white);
+}
+
+.btn-accent:hover {
+  background: var(--white);
+  color: var(--black);
 }
 
 .dashoff {
@@ -240,59 +248,63 @@ body {
 }
 
 .skill-icon {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .service-box {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
 .service-box li {
-    margin: 0.5rem;
-    border: solid 0.5px #D8D8D8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    border-radius: 10px;
+  margin: 0.5rem;
+  border: solid 0.5px #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .service-box li:hover {
-    background: var(--accent-color);
-    color: var(--white);
-    cursor: pointer;
+  background: var(--accent-color);
+  color: var(--white);
+  cursor: pointer;
 }
 
 .service-box li:hover .service-icon {
-    color: var(--white);
+  color: var(--white);
 }
 
 .service-box li:hover .service-description {
-    color: var(--white);
+  color: var(--white);
 }
 
 .service-name {
-    margin-top: 0.5rem;
-    font-weight: 800;
-    font-size: large;
-    text-align: center;
-    padding: 0.1rem;
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: large;
+  text-align: center;
+  padding: 0.1rem;
 }
 
 .service-description {
-    font-size: small;
-    color: var(--grey);
+  font-size: small;
+  color: var(--grey);
 }
 
 .service-icon {
-    font-size: 1.5rem;
-    color: var(--accent-color);
+  font-size: 1.5rem;
+  color: var(--accent-color);
 }
 
 /*** CONTACT CARD START ****/
+
+.imgtest {
+    float: right;
+}
