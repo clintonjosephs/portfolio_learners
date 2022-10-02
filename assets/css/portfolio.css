@@ -140,6 +140,10 @@ body {
   margin-top: 2rem;
 }
 
+.welcomemsg {
+  padding: 1rem;
+}
+
 .btn {
   background: var(--accent-color);
   color: var(--white);
