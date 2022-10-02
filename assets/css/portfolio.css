@@ -3,10 +3,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat';
 }
 
 body {
-  font-family: 'Montserrat';
   background: var(--primary-color);
 }
 
@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 5rem;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   position: relative;
 }
@@ -39,13 +39,11 @@ body {
   border-radius: 15px;
   padding: 2rem;
   color: var(--white);
-  position: fixed;
-  left: 17rem;
+  /* position: fixed; */
 }
 
 .content {
   position: relative;
-  left: 7rem;
 }
 
 .nav-title p {
@@ -129,45 +127,7 @@ body {
 
 /*** WELCOME CARD END ****/
 
-/*** ABOUT CARD START ****/
-.info {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5rem;
-}
-
-.about-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-/*** ABOUT CARD END ****/
-.cardx {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50rem;
-  height: 35rem;
-  border-radius: 15px;
-  padding: 2rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50rem;
-  height: 35rem;
-  border-radius: 15px;
-  padding: 2rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  background: var(--white);
-}
-
+/***** General CSS ****/
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -221,6 +181,42 @@ body {
   color: var(--grey);
 }
 
+.welcome p {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--white);
+  }
+}
+
 .further-details {
   margin: 20px auto;
   background-color: #fff;
@@ -268,7 +264,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 150px;
   border-radius: 10px;
 }
 
@@ -304,6 +299,41 @@ body {
   color: var(--accent-color);
 }
 
+/*** ABOUT CARD START ****/
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+/*** ABOUT CARD END ****/
+
+
+.cardx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  height: 35rem;
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  height: 35rem;
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  background: var(--white);
+}
+
+
 /*** CONTACT CARD START ****/
 
 .imgtest {
@@ -317,7 +347,6 @@ body {
 }
 
 .contact-details {
-  border: solid 1px black;
   flex: 1;
 }
 
@@ -335,10 +364,10 @@ form textarea {
   border-left: none;
   border-right: none;
   padding: 0.6rem;
-  border-radius: 5px;
   margin-bottom: 0.6rem;
   font-size: 0.9rem;
   margin-left: 5px;
+  font-family: 'Montserrat';
 }
 
 form input[type='text']:focus,
@@ -356,4 +385,160 @@ form textarea:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+}
+
+form button[type='submit'] {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+form button[type='submit']:hover {
+  background: var(--accent-color);
+  color: var(--white);
+}
+
+form i {
+  color: var(--accent-color);
+}
+
+.contact-icon {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-right: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-name {
+  font-weight: bolder;
+}
+
+.contact-name span {
+  color: var(--grey);
+}
+
+/** General CSS end ***/
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .welcome-wrapper {
+    background-image: url(../images/welcomebg.jpeg);
+    background-size: cover;
+    margin-left: 0;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .welcome {
+    color: var(--white);
+    background: var(--secondary-color);
+    opacity: 0.9;
+    width: 100%;
+  }
+  
+  .cardx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 35rem;
+    height: auto;
+    border-radius: 0px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 35rem;
+    border-radius: 0px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    background: var(--white);
+    height: auto;
+    padding: 0;
+  }
+
+  .further-details {
+    margin: 0px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .cta > a {
+    margin-top: 1rem;
+  }
+
+  .dashoff {
+    margin-left: 0;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  .contact-details {
+    flex: 0;
+  }
+
+  form {
+    flex: 0;
+    margin: 0;
+  }
+
+  .container {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+
+  /*** ABOUT CARD START ****/
+  .info {
+    display: block;
+    margin-top: 0;
+  }
+  /*** ABOUT CARD END ****/
 }

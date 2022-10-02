@@ -11,10 +11,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- CSS only -->
   </head>
   <body>
     <div class="container">
-      <section class="navigation shadow">
+      <header class="navigation shadow">
         <div class="nav-header">
           <div class="nav-title">
             <img
@@ -27,33 +28,33 @@
           </div>
         </div>
         <div class="nav-menu">
-          <ul class="nav-links">
+          <nav class="nav-links">
             <li>
-              <a href="index.html"
+              <a href="#top"
                 ><i class="fa fa-home icon"></i> <span>Home</span></a
               >
             </li>
             <li>
-              <a href="about.html"
+              <a href="#about-wrapper"
                 ><i class="fa fa-user icon"></i> <span>About</span></a
               >
             </li>
             <li>
-              <a href="portfolio.html">
-                <i class="fa fa-lightbulb-o icon"></i><span>Services</span></a
+              <a href="#skills-wrapper">
+                <i class="fa fa-lightbulb-o icon"></i><span>Skills</span></a
               >
             </li>
             <li>
-              <a href="contact.html"
-                ><i class="fa fa-building-o icon"></i><span>Works</span></a
+              <a href="#services-wrapper"
+                ><i class="fa fa-building-o icon"></i><span>Services</span></a
               >
             </li>
             <li>
-              <a href="contact.html"
+              <a href="#contact-wrapper"
                 ><i class="fa fa-phone icon"></i><span>Contact</span></a
               >
             </li>
-          </ul>
+          </nav>
           <div>
             <ul class="social">
               <li>
@@ -69,12 +70,13 @@
             <div>&copy; 2022 Portfolio Website</div>
           </div>
         </div>
-      </section>
-      <section class="content">
+      </header>
+      <div id="top"></div>
+      <main class="content">
         <div class="welcome-wrapper">
           <div class="welcome cardx shadow">
             <h1>I'm Clinton Mbonu</h1>
-            <p>Software Engineer | Web Developer | Entrepreneur | Co-Founder</p>
+            <p>Software Engineer | EIT @ MEST</p>
             <div class="cta">
               <a href="portfolio.html" class="btn"
                 ><i class="fa fa-lightbulb-o icon"></i>View Portfolio</a
@@ -86,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff">
+        <div class="card shadow dashoff" id="about-wrapper">
           <h2>About Me</h2>
           <div class="underscore"></div>
           <div class="info">
@@ -115,65 +117,67 @@
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff">
+        <div class="card shadow dashoff" id="skills-wrapper">
           <h2>My skills</h2>
           <div class="underscore"></div>
-          <p>
-            I have a wide range of skills in the tech industry. I have worked on
-            projects in the following areas:
-          </p>
-          <div class="further-details">
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-code" aria-hidden="true"></i>
+          <div class="details">
+            <p>
+              I have a wide range of skills in the tech industry. I have worked
+              on projects in the following areas:
+            </p>
+            <div class="further-details">
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">Angular</div>
               </div>
-              <div class="skill-name">Angular</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">React.js</div>
               </div>
-              <div class="skill-name">React.js</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-database" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">HTML/CSS</div>
               </div>
-              <div class="skill-name">HTML/CSS</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-paint-brush" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">SQL</div>
               </div>
-              <div class="skill-name">SQL</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">JEST</div>
               </div>
-              <div class="skill-name">JEST</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-cloud" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-cloud" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">MySQL</div>
               </div>
-              <div class="skill-name">MySQL</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">Postgres</div>
               </div>
-              <div class="skill-name">Postgres</div>
-            </div>
-            <div class="skill">
-              <div class="skill-icon">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
+              <div class="skill">
+                <div class="skill-icon">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                </div>
+                <div class="skill-name">Flutter</div>
               </div>
-              <div class="skill-name">Flutter</div>
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff">
+        <div class="card shadow dashoff" id="services-wrapper">
           <h2>My Services</h2>
           <div class="underscore"></div>
           <ul class="service-box">
@@ -216,71 +220,118 @@
               <div class="service-icon">
                 <i class="fa fa-cloud" aria-hidden="true"></i>
               </div>
-              <div class="service-name">Cloud Computing <br />
-                <span class="service-description">Embrace most recent technologies for data storage</span>
+              <div class="service-name">
+                Cloud Computing <br />
+                <span class="service-description"
+                  >Embrace most recent technologies for data storage</span
+                >
               </div>
             </li>
             <li>
               <div class="service-icon">
                 <i class="fa fa-handshake-o" aria-hidden="true"></i>
               </div>
-              <div class="service-name">Consultancy <br />
-                <span class="service-description">Offer advice on how to automate their processes and embrace ICT</span>
+              <div class="service-name">
+                Consultancy <br />
+                <span class="service-description"
+                  >Offer advice on how to automate their processes and embrace
+                  ICT</span
+                >
               </div>
             </li>
             <li>
               <div class="service-icon">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
               </div>
-              <div class="service-name">Project Management <br />
-                <span class="service-description">We help manage your project for better approach</span>
+              <div class="service-name">
+                Project Management <br />
+                <span class="service-description"
+                  >We help manage your project for better approach</span
+                >
               </div>
             </li>
           </ul>
         </div>
-        <div class="card shadow dashoff">
+        <div class="card shadow dashoff" id="contact-wrapper">
           <h2>Get in touch</h2>
           <div class="underscore"></div>
           <div class="form-container">
             <div class="contact-details">
               <div class="contact">
                 <div class="contact-icon">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
-                <div class="contact-name">Location</div>
-                <div class="contact-description">Accra, Ghana</div>
+                <div class="contact-name">
+                  Phone <br />
+                  <span>+234 813 000 0000</span>
+                </div>
               </div>
               <div class="contact">
                 <div class="contact-icon">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
-                <div class="contact-name">Email</div>
+                <div class="contact-name">
+                  Location <br />
+                  <span>Accra, Ghana</span>
+                </div>
+              </div>
+              <div class="contact">
+                <div class="contact-icon">
+                  <i class="fa fa-at" aria-hidden="true"></i>
+                </div>
+                <div class="contact-name">
+                  Email <br />
+                  <span>clintonjosephs26@gmail.com</span>
+                </div>
               </div>
             </div>
             <form action="">
               <div class="form-group">
                 <i class="fa fa-user" aria-hidden="true"></i>
-                <input type="text" name="name" id="name" placeholder="Your name" maxlength="200"/>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name"
+                  maxlength="200"
+                />
               </div>
               <div class="form-group">
                 <i class="fa fa-at" aria-hidden="true"></i>
-                <input type="email" name="email" id="email" placeholder="Email Address" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
               </div>
               <div class="form-group">
                 <i class="fa fa-header" aria-hidden="true"></i>
-                <input type="text" name="name" id="name" placeholder="Subject" maxlength="200"/>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Subject"
+                  maxlength="200"
+                />
               </div>
               <div class="form-group">
                 <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn-accent">Send</button>
+                <button type="submit" class="btn-accent">Send Message</button>
               </div>
             </form>
           </div>
         </div>
-      </section>
+      </main>
     </div>
   </body>
 </html>
