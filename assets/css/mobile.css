@@ -1,0 +1,207 @@
+.welcome-wrapper {
+  background-image: url(../images/welcomebg.jpeg);
+  background-size: cover;
+  margin-left: 0;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.welcome {
+  color: var(--white);
+  background: var(--secondary-color);
+  opacity: 0.9;
+  width: 100%;
+}
+
+.cardx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 35rem;
+  height: auto;
+  border-radius: 0px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 35rem;
+  border-radius: 0px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  background: var(--white);
+  height: auto;
+  padding: 0;
+}
+
+.further-details {
+  margin: 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.cta > a {
+  margin-top: 1rem;
+}
+
+.dashoff {
+  margin-left: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.contact-details {
+  flex: 0;
+}
+
+form {
+  flex: 0;
+  margin: 0;
+}
+
+.container {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+/*** ABOUT CARD START ****/
+.info {
+  display: block;
+  margin-top: 0;
+}
+/*** ABOUT CARD END ****/
+
+.toogle-btn {
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+.menubtn {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.closeMenu {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+}
+
+.closeMenu > i {
+    font-size: 2.5rem;
+}
+
+/********** NAVIGATION SIDEBAR START **********/
+.navigation {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: var(--secondary-color);
+  border-radius: 0px;
+  padding: 2rem;
+  color: var(--white);
+  position: fixed;
+  z-index: 1;
+  opacity: 0.9;
+  overflow-x: scroll;
+  transition: 0.5s;
+}
+
+.content {
+  position: relative;
+}
+
+.nav-title p {
+  font-size: small;
+}
+
+.nav-menu {
+  margin-top: 3rem;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 20rem;
+}
+
+.nav-links li {
+  margin: 1rem 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.social {
+  list-style: none;
+  padding: 0px;
+  margin: 0px 0px 2rem 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social li {
+  background: var(--accent-color);
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/********** NAVIGATION SIDEBAR END **********/

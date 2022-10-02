@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 992px)"/>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,6 +17,9 @@
   <body>
     <div class="container">
       <header class="navigation shadow">
+        <a href="#" class="closeMenu" onclick="closeMobileMenu()"> 
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
         <div class="nav-header">
           <div class="nav-title">
             <img
@@ -75,6 +79,11 @@
       <main class="content">
         <div class="welcome-wrapper">
           <div class="welcome cardx shadow">
+            <div class="menubtn" tabindex="2" id="mobileMenuButton">
+              <div class="toogle-btn"></div>
+              <div class="toogle-btn"></div>
+              <div class="toogle-btn"></div>
+          </div>
             <h1>I'm Clinton Mbonu</h1>
             <p>Software Engineer | EIT @ MEST</p>
             <div class="cta">
@@ -333,5 +342,6 @@
         </div>
       </main>
     </div>
+    <script src="./assets/js/portfolio.js"></script>
   </body>
 </html>
