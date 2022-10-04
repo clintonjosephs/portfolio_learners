@@ -1,5 +1,8 @@
+body {
+  padding-top: 0;
+}
+
 .welcome-wrapper {
-  background-image: url(../images/welcomebg.jpeg);
   background-size: cover;
   margin-left: 0;
   border-radius: 0px;
@@ -121,7 +124,7 @@ form {
 .toogle-btn {
   width: 35px;
   height: 3px;
-  background-color: #000;
+  background-color: var(--white);
   margin: 6px 0;
 }
 
@@ -157,6 +160,7 @@ form {
   opacity: 0.9;
   overflow-x: scroll;
   transition: 0.5s;
+  border: solid 1px green;
 }
 
 .content {
@@ -219,6 +223,12 @@ form {
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.content {
+  /* position: relative; */
+  float: none;
+  margin-left: 0;
 }
 
 /********** NAVIGATION SIDEBAR END **********/

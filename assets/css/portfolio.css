@@ -8,6 +8,7 @@
 
 body {
   background: var(--primary-color);
+  padding-top: 2rem;
 }
 
 :root {
@@ -23,9 +24,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
-  width: 100%;
-  justify-content: center;
+  max-width: max-content;
+  margin: auto;
   position: relative;
 }
 
@@ -35,18 +35,20 @@ body {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
+  color: var(--white);
+  position: fixed;
+  z-index: 100;
   width: 13rem;
   height: 35rem;
-  background: var(--secondary-color);
   padding: 2rem;
-  color: var(--white);
-  /* position: fixed; */
+  background: var(--secondary-color);
+
 }
 
 .content {
-  position: relative;
+  /* position: relative; */
+  float: right;
+  margin-left: 17rem;
 }
 
 .nav-title p {
@@ -74,6 +76,10 @@ body {
   font-size: medium;
   display: flex;
   align-items: center;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-color);
 }
 
 .icon {
@@ -120,7 +126,7 @@ body {
 .welcome {
   color: var(--white);
   background: var(--secondary-color);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .welcome h1 {
@@ -314,13 +320,12 @@ body {
 }
 /*** ABOUT CARD END ****/
 
-
 .cardx {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 60vw;
-  height: 60vh;
+  height: 35rem;
   padding: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -331,13 +336,12 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 60vw;
-  height: 60vh;
+  height: 35rem;
   padding: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
   background: var(--white);
 }
-
 
 /*** CONTACT CARD START ****/
 
@@ -441,4 +445,8 @@ form i {
 
 .menubtn {
   display: none;
+}
+
+.padoff {
+  margin-left: 0.3rem;
 }

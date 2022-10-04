@@ -6,7 +6,6 @@
     <title>Clinton Mbonu</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
     <link
       rel="stylesheet"
@@ -17,6 +16,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  media="screen and (min-width: 992px)" />
     <!-- CSS only -->
   </head>
   <body>
@@ -37,7 +38,7 @@
           </div>
         </div>
         <div class="nav-menu">
-          <nav class="nav-links">
+          <ul class="nav-links">
             <li>
               <a href="#top"
                 ><i class="fa fa-home icon"></i> <span>Home</span></a
@@ -45,12 +46,12 @@
             </li>
             <li>
               <a href="#about-wrapper"
-                ><i class="fa fa-user icon"></i> <span>About</span></a
+                ><i class="fa fa-user icon"></i> <span class="padoff">About</span></a
               >
             </li>
             <li>
               <a href="#skills-wrapper">
-                <i class="fa fa-lightbulb-o icon"></i><span>Skills</span></a
+                <i class="fa fa-lightbulb-o icon"></i><span class="padoff">Skills</span></a
               >
             </li>
             <li>
@@ -63,7 +64,7 @@
                 ><i class="fa fa-phone icon"></i><span>Contact</span></a
               >
             </li>
-          </nav>
+          </ul>
           <div>
             <ul class="social">
               <li>
@@ -104,14 +105,18 @@
               <a
                 href="./assets/docs/resume.pdf"
                 class="btn-accent"
-                target="_blank"
+                download="clinton_resume.pdf"
                 ><i class="fa fa-inbox icon" aria-hidden="true"></i>Download
                 Resume</a
               >
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="about-wrapper" data-aos="fade-right">
+        <div
+          class="card shadow dashoff"
+          id="about-wrapper"
+          data-aos="fade-right"
+        >
           <h2>About Me</h2>
           <div class="underscore"></div>
           <div class="info">
@@ -125,22 +130,26 @@
             <div class="details">
               <h2>Hello,</h2>
               <p>
-                I'm a software developer! I can help you build products, a
-                feature, website or mobile app. Look through some of my work and
-                experience! If you like what you see and have a project you need
-                to be worked on, don't hesitate to contact me.
+                I'm truly happy when solving problems that affect people's lives
+                positively, which is why I tailor my career to identifying
+                real-life problems and building solutions that solve them using
+                relevant technologies. Feel free to hit me up let's collaborate
               </p>
 
               <div class="further-details">
                 <div><span>Name: </span> Clinton Mbonu</div>
                 <div><span>Location:</span>Accra, Ghana</div>
-                <div><span>Email:</span>clintonmbonu@meltwater.com</div>
+                <div><span>Email:</span>clintonmbonu@meltwater.org</div>
                 <div><span>Hobbies:</span>Music, Coding</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="skills-wrapper" data-aos="fade-left">
+        <div
+          class="card shadow dashoff"
+          id="skills-wrapper"
+          data-aos="fade-left"
+        >
           <h2>My skills</h2>
           <div class="underscore"></div>
           <div class="details">
@@ -200,7 +209,11 @@
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="services-wrapper" data-aos="fade-right">
+        <div
+          class="card shadow dashoff"
+          id="services-wrapper"
+          data-aos="fade-right"
+        >
           <h2>My Services</h2>
           <div class="underscore"></div>
           <ul class="service-box">
@@ -275,7 +288,11 @@
             </li>
           </ul>
         </div>
-        <div class="card shadow dashoff" id="contact-wrapper" data-aos="fade-left">
+        <div
+          class="card shadow dashoff"
+          id="contact-wrapper"
+          data-aos="fade-left"
+        >
           <h2>Get in touch</h2>
           <div class="underscore"></div>
           <div class="form-container">
@@ -304,11 +321,11 @@
                 </div>
                 <div class="contact-name">
                   Email <br />
-                  <span>clintonjosephs26@gmail.com</span>
+                  <span>clintonmbonu@meltwater.org</span>
                 </div>
               </div>
             </div>
-            <form action="https://formspree.io/f/mrgjzyey">
+            <form action="https://formspree.io/f/mrgjzyey" method="POST">
               <div class="form-group">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <input
