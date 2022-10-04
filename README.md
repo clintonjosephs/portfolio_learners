@@ -1,4 +1,4 @@
-# Portfolio Learner
+# Portfolio
 
 In practice / Recap of basic html and css, this project aims to enhance personal branding and how we customize ourselves to project a professional outlook.
 
