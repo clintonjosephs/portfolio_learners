@@ -6,6 +6,7 @@
     <title>Clinton Mbonu</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
     <link
       rel="stylesheet"
@@ -81,7 +82,7 @@
       </header>
       <div id="top"></div>
       <main class="content">
-        <div class="welcome-wrapper">
+        <div class="welcome-wrapper" data-aos="fade-left">
           <div class="welcome cardx shadow">
             <div class="menubtn" tabindex="2" id="mobileMenuButton">
               <div class="toogle-btn"></div>
@@ -93,18 +94,24 @@
               <p>Software Engineer | EIT @ MEST</p>
             </div>
 
-            <div class="cta"> 
-              <a href="https://github.com/clintonjosephs" class="btn" target="_blank"
+            <div class="cta">
+              <a
+                href="https://github.com/clintonjosephs"
+                class="btn"
+                target="_blank"
                 ><i class="fa fa-github" aria-hidden="true"></i> Check GitHub</a
               >
-              <a href="./assets/docs/resume.pdf" class="btn-accent" target="_blank"
+              <a
+                href="./assets/docs/resume.pdf"
+                class="btn-accent"
+                target="_blank"
                 ><i class="fa fa-inbox icon" aria-hidden="true"></i>Download
                 Resume</a
               >
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="about-wrapper">
+        <div class="card shadow dashoff" id="about-wrapper" data-aos="fade-right">
           <h2>About Me</h2>
           <div class="underscore"></div>
           <div class="info">
@@ -133,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="skills-wrapper">
+        <div class="card shadow dashoff" id="skills-wrapper" data-aos="fade-left">
           <h2>My skills</h2>
           <div class="underscore"></div>
           <div class="details">
@@ -193,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="card shadow dashoff" id="services-wrapper">
+        <div class="card shadow dashoff" id="services-wrapper" data-aos="fade-right">
           <h2>My Services</h2>
           <div class="underscore"></div>
           <ul class="service-box">
@@ -268,7 +275,7 @@
             </li>
           </ul>
         </div>
-        <div class="card shadow dashoff" id="contact-wrapper">
+        <div class="card shadow dashoff" id="contact-wrapper" data-aos="fade-left">
           <h2>Get in touch</h2>
           <div class="underscore"></div>
           <div class="form-container">
@@ -354,5 +361,9 @@
       </main>
     </div>
     <script src="./assets/js/portfolio.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

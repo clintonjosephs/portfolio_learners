@@ -12,7 +12,7 @@ body {
 
 :root {
   --primary-color: #f6f7fe;
-  --secondary-color: #4a63e7;
+  --secondary-color: #1e2125;
   --accent-color: #ff5958;
   --white: #ffffff;
   --black: #000000;
@@ -40,7 +40,6 @@ body {
   width: 13rem;
   height: 35rem;
   background: var(--secondary-color);
-  border-radius: 15px;
   padding: 2rem;
   color: var(--white);
   /* position: fixed; */
@@ -112,7 +111,7 @@ body {
 
 /*** WELCOME CARD START ****/
 .welcome-wrapper {
-  background-image: url(../images/welcomebg.jpeg);
+  background-image: url(../images/portraitabout.jpeg);
   background-size: cover;
   margin-left: 2rem;
   border-radius: 15px;
@@ -148,7 +147,7 @@ body {
   background: var(--accent-color);
   color: var(--white);
   padding: 1rem 1rem;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   text-decoration: none;
 }
 
@@ -160,7 +159,7 @@ body {
 .btn-accent {
   color: var(--white);
   padding: 1rem 1rem;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   text-decoration: none;
   border: solid 1px var(--white);
 }
@@ -177,7 +176,7 @@ body {
 .underscore {
   border: solid 3px var(--accent-color);
   width: 2rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-bottom: 2rem;
 }
 
@@ -272,7 +271,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .service-box li:hover {
@@ -320,9 +319,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50rem;
-  height: 35rem;
-  border-radius: 15px;
+  width: 60vw;
+  height: 60vh;
   padding: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -332,9 +330,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50rem;
-  height: 35rem;
-  border-radius: 15px;
+  width: 60vw;
+  height: 60vh;
   padding: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -399,7 +396,7 @@ form button[type='submit'] {
   background: var(--secondary-color);
   color: var(--white);
   padding: 1rem 1rem;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-decoration: none;
   border: none;
   margin-top: 1rem;
