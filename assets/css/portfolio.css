@@ -8,7 +8,10 @@
 
 body {
   background: var(--primary-color);
-  padding-top: 2rem;
+}
+
+#top {
+  margin-bottom: 2rem;
 }
 
 :root {
@@ -209,32 +212,11 @@ body {
   border-radius: 50%;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--white);
-  }
-}
-
 .further-details {
   margin: 20px auto;
   background-color: #fff;
   display: grid;
-  grid-template-columns: 20rem 20rem;
+  grid-template-columns: auto auto;
   grid-row: auto auto;
   grid-row-gap: 20px;
 }
@@ -449,4 +431,34 @@ form i {
 
 .padoff {
   margin-left: 0.3rem;
+}
+
+.social li:hover {
+  cursor: pointer;
+}
+
+.social li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--white);
+  }
 }

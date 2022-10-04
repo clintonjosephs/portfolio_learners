@@ -16,11 +16,16 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  media="screen and (min-width: 992px)" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+      media="screen and (min-width: 992px)"
+    />
     <!-- CSS only -->
   </head>
   <body>
+    <div id="top"></div>
     <div class="container">
       <header class="navigation shadow" id="navigation">
         <a href="#" class="closeMenu" onclick="closeMobileMenu()">
@@ -46,12 +51,14 @@
             </li>
             <li>
               <a href="#about-wrapper"
-                ><i class="fa fa-user icon"></i> <span class="padoff">About</span></a
+                ><i class="fa fa-user icon"></i>
+                <span class="padoff">About</span></a
               >
             </li>
             <li>
               <a href="#skills-wrapper">
-                <i class="fa fa-lightbulb-o icon"></i><span class="padoff">Skills</span></a
+                <i class="fa fa-lightbulb-o icon"></i
+                ><span class="padoff">Skills</span></a
               >
             </li>
             <li>
@@ -68,20 +75,30 @@
           <div>
             <ul class="social">
               <li>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://github.com/clintonjosephs" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
               </li>
-              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
               <li>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a href="https://twitter.com/clintonmbonu2">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
               </li>
-              <li><i class="fa fa-angellist" aria-hidden="true"></i></li>
+              <li>
+                <a href="https://linkedin.com/in/clinton-mbonu" target="_blank"
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/clinton-mbonu" target="_blank">
+                  <i class="fa fa-angellist" aria-hidden="true"></i>
+                </a>
+              </li>
             </ul>
-            <div>&copy; 2022 Portfolio Website</div>
+            <div>&copy; <span class="dateShow"></span> Portfolio Website</div>
           </div>
         </div>
       </header>
-      <div id="top"></div>
       <main class="content">
         <div class="welcome-wrapper" data-aos="fade-left">
           <div class="welcome cardx shadow">
@@ -92,7 +109,7 @@
             </div>
             <div class="welcomemsg">
               <h1>I'm Clinton Mbonu</h1>
-              <p>Software Engineer | EIT @ MEST</p>
+              <p>Software Developer | EIT @ MEST</p>
             </div>
 
             <div class="cta">
@@ -162,7 +179,9 @@
                 <div class="skill-icon">
                   <i class="fa fa-code" aria-hidden="true"></i>
                 </div>
-                <div class="skill-name">Angular</div>
+                <div class="skill-name">Angular
+                  <div data-width="95%" style="width: 95%;" class="chart"></div>
+                </div>
               </div>
               <div class="skill">
                 <div class="skill-icon">
