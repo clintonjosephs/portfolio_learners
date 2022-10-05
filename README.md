@@ -12,7 +12,6 @@ In practice / Recap of basic html and css, this project aims to enhance personal
 
 ## Get Started
 
-Please get your browser update.
 To get a local copy up and running follow these simple steps.
 
 Run the command below from the Terminal:
@@ -23,7 +22,7 @@ Run the command below from the Terminal:
 
       run index.html
 
-## Authors
+## Author
 
 👤 **Clinton Mbonu**
 
