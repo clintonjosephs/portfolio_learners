@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+:root {
+  --primary-color: #f6f7fe;
+  --secondary-color: #1e2125;
+  --accent-color: #ff5958;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #808080;
+  --greyout: #d8d8d8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,16 +34,6 @@ body {
 .bar-indicator {
   height: 0.5rem;
   background: var(--black);
-}
-
-:root {
-  --primary-color: #f6f7fe;
-  --secondary-color: #1e2125;
-  --accent-color: #ff5958;
-  --white: #ffffff;
-  --black: #000000;
-  --grey: #808080;
-  --greyout: #d8d8d8;
 }
 
 .container {
