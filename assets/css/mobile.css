@@ -124,7 +124,7 @@ form {
 .toogle-btn {
   width: 35px;
   height: 3px;
-  background-color: var(--white);
+  background-color: var(--accent-color);
   margin: 6px 0;
 }
 
