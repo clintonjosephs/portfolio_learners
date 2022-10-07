@@ -273,7 +273,7 @@ body {
 }
 
 .service-box li:hover {
-  background: var(--accent-color);
+  background: var(--grey);
   color: var(--white);
   cursor: pointer;
 }
